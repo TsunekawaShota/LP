@@ -3,97 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>製品紹介ランディングページ</title>
+    <title>Nidec 採用ランディングページ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="webgl-canvas"></div>
     <header class="header">
         <div class="container">
-            <h1 class="product-name">Gemini CLI Product</h1>
-            <nav class="main-nav">
+            <h1 class="logo">Nidec</h1>
+            <nav class="global-nav">
                 <ul>
-                    <li><a href="#features">特徴</a></li>
-                    <li><a href="#pricing">価格</a></li>
-                    <li><a href="#contact">問い合わせ</a></li>
+                    <li><a href="#hero">TOP</a></li>
+                    <li><a href="#culture">CULTURE</a></li>
+                    <li><a href="#data">DATA</a></li>
+                    <li><a href="#process">PROCESS</a></li>
                 </ul>
             </nav>
+            <button id="dark-mode-toggle">モード切替</button>
         </div>
     </header>
 
-    <main>
+    <main class="content">
         <section id="hero" class="hero-section">
             <div class="container">
-                <h2 class="catchphrase">あなたのビジネスを加速させる次世代CLIツール</h2>
-                <img src="https://via.placeholder.com/600x400?text=Product+Image" alt="製品イメージ" class="product-image">
+                <h2>世界を軽やかに動かす、<br>その原動力になる。</h2>
+                <p>ニデックは、精密小型から超大型まで、<br>世界中のあらゆるモーターで社会を支えています。<br>あなたの情熱で、未来を動かしませんか。</p>
             </div>
         </section>
 
-        <section id="features" class="features-section">
+        <section id="culture" class="culture-section">
             <div class="container">
-                <h2 class="section-title">製品の特徴</h2>
-                <div class="feature-list">
-                    <div class="feature-item">
-                        <h3>特徴1: 高速処理</h3>
-                        <p>CLIが提供する高速なコマンド実行により、作業効率が格段に向上します。</p>
+                <h3 class="section-title">人・文化</h3>
+                <div class="story-container">
+                    <div class="story-item scroll-reveal">
+                        <h4>1. 情熱、熱意、執念</h4>
+                        <p>私たちは、何事にも情熱と熱意をもって取り組み、最後までやり遂げる執念を大切にしています。この精神が、困難な課題を乗り越える原動力となります。</p>
                     </div>
-                    <div class="feature-item">
-                        <h3>特徴2: 簡単な統合</h3>
-                        <p>既存のシステムに容易に統合でき、開発プロセスをスムーズにします。</p>
+                    <div class="story-item scroll-reveal">
+                        <h4>2. 知的ハードワーキング</h4>
+                        <p>長時間働くことだけが全てではありません。知恵を絞り、工夫を凝らし、誰よりも効率的に働く「知的ハードワーキング」を追求しています。</p>
                     </div>
-                    <div class="feature-item">
-                        <h3>特徴3: 強力な拡張性</h3>
-                        <p>プラグインやカスタムスクリプトで機能を自由に拡張できます。</p>
+                    <div class="story-item scroll-reveal">
+                        <h4>3. すぐやる、必ずやる、出来るまでやる</h4>
+                        <p>スピードは競争力の源泉です。決めたことはすぐに行動に移し、一度始めたことは必ずやり遂げ、出来るまで諦めない。この徹底した実行力が私たちの強みです。</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="pricing" class="pricing-section">
+        <section id="data" class="data-section">
             <div class="container">
-                <h2 class="section-title">価格プラン</h2>
-                <table class="pricing-table">
-                    <thead>
-                        <tr>
-                            <th>プラン</th>
-                            <th>月額料金</th>
-                            <th>特徴</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>基本プラン</td>
-                            <td>$10</td>
-                            <td>基本的な機能が利用可能</td>
-                        </tr>
-                        <tr>
-                            <td>プロプラン</td>
-                            <td>$30</td>
-                            <td>全機能、優先サポート</td>
-                        </tr>
-                        <tr>
-                            <td>エンタープライズ</td>
-                            <td>お見積もり</td>
-                            <td>カスタム機能、専任サポート</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h3 class="section-title">数値・条件</h3>
+                <div class="data-grid">
+                    <div class="data-tile">
+                        <h4>初任給 (2025年度予定)</h4>
+                        <p>学部卒: 273,000円/月</p>
+                        <p>修士了: 295,000円/月</p>
+                        <p>博士了: 327,000円/月</p>
+                    </div>
+                    <div class="data-tile">
+                        <h4>休日・休暇</h4>
+                        <p>年間休日121日 (2022年度実績)</p>
+                        <p>完全週休2日制、GW、夏季、年末年始</p>
+                    </div>
+                    <div class="data-tile">
+                        <h4>働き方</h4>
+                        <p>平均残業時間: 19.3h/月 (2024年度)</p>
+                        <p>有給休暇取得率: 64.9% (2024年度)</p>
+                        <p>在宅・時差勤務制度あり</p>
+                    </div>
+                    <div class="data-tile">
+                        <h4>多様性 (2024年度)</h4>
+                        <p>女性社員比率(連結): 46.6%</p>
+                        <p>女性管理職比率(連結): 21.9%</p>
+                        <p>障がい者雇用率(単体): 2.79%</p>
+                    </div>
+                    <div class="data-tile">
+                        <h4>中途採用比率 (2024年度)</h4>
+                        <p class="large-text">46%</p>
+                    </div>
+                    <div class="data-tile">
+                        <h4>福利厚生</h4>
+                        <p>借上げ社宅制度、確定拠出年金、財形貯蓄、従業員持株会など</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
+        <section id="process" class="process-section">
             <div class="container">
-                <h2 class="section-title">お問い合わせ</h2>
-                <p>ご質問やご要望がありましたら、お気軽にお問い合わせください。</p>
-                <a href="mailto:info@example.com" class="contact-button">メールで問い合わせる</a>
+                <h3 class="section-title">採用・プロセス</h3>
+                <div class="process-container">
+                    <div class="process-flow">
+                        <h4>選考フロー</h4>
+                        <ol>
+                            <li><span>1.</span> エントリー</li>
+                            <li><span>2.</span> 会社説明会 (Web/対面)</li>
+                            <li><span>3.</span> 書類選考・適性検査</li>
+                            <li><span>4.</span> 面接 (複数回)</li>
+                            <li><span>5.</span> 内々定</li>
+                        </ol>
+                    </div>
+                    <div class="job-category">
+                        <h4>募集職種</h4>
+                        <ul>
+                            <li><b>技術系:</b> 研究開発、製品設計、生産技術、品質保証など</li>
+                            <li><b>事務系:</b> 営業、経理、法務、人事、経営企画など</li>
+                        </ul>
+                        <a href="https://www.nidec.com/jp/recruit/" class="button-apply" target="_blank" rel="noopener noreferrer">エントリーはこちら</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Gemini CLI Product. All rights reserved.</p>
-            <p>会社情報: 株式会社Gemini CLI</p>
+            <div class="company-info">
+                <h4>ニデック株式会社 (NIDEC CORPORATION)</h4>
+                <p>〒601-8205 京都市南区久世殿城町338番地</p>
+                <a href="https://www.nidec.com/jp/" target="_blank" rel="noopener noreferrer">公式サイト</a>
+            </div>
+            <p class="copyright">&copy; 2024 NIDEC CORPORATION. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
